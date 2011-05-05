@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E29FA858-444C-416F-9064-C34BB6A532C0}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MonoMobile.Facebook</RootNamespace>
+    <AssemblyName>MonoMobile.Facebook</AssemblyName>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\Debug\monomobile-facebook\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\Release\monomobile-facebook\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchDebug>False</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\Facebook\DateTimeConvertor.cs">
+      <Link>DateTimeConvertor.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\DefaultFacebookApplication.cs">
+      <Link>DefaultFacebookApplication.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\DownloadDataCompletedEventArgsWrapper.cs">
+      <Link>DownloadDataCompletedEventArgsWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\ExceptionFactory.cs">
+      <Link>ExceptionFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookApiEventArgs.cs">
+      <Link>FacebookApiEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookApiException.cs">
+      <Link>FacebookApiException.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookApiLimitException.cs">
+      <Link>FacebookApiLimitException.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookApp.cs">
+      <Link>FacebookApp.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookApplication.cs">
+      <Link>FacebookApplication.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookAsyncResult.cs">
+      <Link>FacebookAsyncResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookBatchParameter.cs">
+      <Link>FacebookBatchParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookClient.cs">
+      <Link>FacebookClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookConfigurationSection.cs">
+      <Link>FacebookConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookMediaObject.cs">
+      <Link>FacebookMediaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookOAuthClient.cs">
+      <Link>FacebookOAuthClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookOAuthException.cs">
+      <Link>FacebookOAuthException.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookOAuthResult.cs">
+      <Link>FacebookOAuthResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\FacebookUtils.cs">
+      <Link>FacebookUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\HttpMethod.cs">
+      <Link>HttpMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\IFacebookApplication.cs">
+      <Link>IFacebookApplication.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\IFacebookSettings.cs">
+      <Link>IFacebookSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\IJsonSerializer.cs">
+      <Link>IJsonSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\IWebClient.cs">
+      <Link>IWebClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\JsonSerializer.cs">
+      <Link>JsonSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\SimpleJson.cs">
+      <Link>SimpleJson.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\UploadDataCompletedEventArgsWrapper.cs">
+      <Link>UploadDataCompletedEventArgsWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\WebClientStateContainer.cs">
+      <Link>WebClientStateContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\WebClientWrapper.cs">
+      <Link>WebClientWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\WebExceptionWrapper.cs">
+      <Link>WebExceptionWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\External\HttpEncoder.cs">
+      <Link>External\HttpEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Facebook\External\HttpUtility.cs">
+      <Link>External\HttpUtility.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Diagnostics.Contracts\System.Diagnostics.Contracts.csproj">
+      <Project>{6A0ED63D-CC69-42DA-9440-908DE1BB10D3}</Project>
+      <Name>System.Diagnostics.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
